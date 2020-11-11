@@ -2,7 +2,7 @@ let result = +prompt('Ведите число?');
 console.log(typeof result );
 
 
-if(typeof result !== Number || typeof result === NaN){
+if(typeof result !== "number" || !isNaN(result)){
     console.log("Упс, кажется, вы ошиблись");
 }
 
